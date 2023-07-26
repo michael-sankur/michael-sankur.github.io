@@ -65,12 +65,12 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
-        <h2 class="heading">About Me</h2>
+    <!--<div id="about">
+        <h2 class="heading"; style="font-weight: bold">About Me</h2>
         <!-- <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading"; style="font-weight: bold">About Me</h2>
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -79,32 +79,35 @@
                 </div>
             </div>
         </div> -->
-        <p>
+        <p><!--
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Doneceu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-        </p>
+        </p>-->
     </div>
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+        <h2 class="heading"; style="font-weight: bold">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="July 2021 - Present">
+            <div data-date="2021 - 2023">
                 <h3>Hypergiant Industries</h3>
                 <h4>Data Scientist</h4>
                 <p>
-                    I developed simulations of electric transmission grids and adverse effects of severe weather, models of weather damage, and strategies to avert and minimize service disruptions.
+                    At Hypergiant, I developed solution strategies for mitigating the effects of severe weather on the electric power grid. Here I developed models of weather effects on electricity generation and consumer demand using tensorflow. I implemented a predictive optimization that incorporates the weather models to reduce instances of high line loading. This was all encapsulated in a simulation framework, deployed on a FastAPI endpoint, and incorporating a CICD process over Azure and Docker.
                 </p>
             </div>
 
-            <div data-date="March 2019 – July 2021">
+            <div data-date="2019 – 2021">
                 <h3>Lawrence Berkeley National Lab</h3>
                 <h4>Computational Project Scientist</h4>
                 <p>
-                    I researched extensions of model-free optimization algorithms, and applications to the electric distribution grid.
+                    At LBNL, I researched unsupervised and reinforcement learning for optimiztion of energy control algorithms.
                 </p>
+                <p><!--
+                    I researched extensions of model-free optimization algorithms, and applications to the electric distribution grid.
+                </p>-->
             </div>
 
-            <div data-date="February 2018 - February 2019">
+            <div data-date="2018 - 2019">
                 <h3>Lawrence Berkeley National Lab</h3>
                 <h4>Postdoctoral Researcher</h4>
                 <p>
@@ -116,7 +119,7 @@
     <!-- End #experience -->
 
     <div id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading"; style="font-weight: bold">Education</h2>
         <div class="education-block">
             <h3>University of California, Berkeley</h3>
             <span class="education-date">August 2009 - December 2017</span>
@@ -124,7 +127,7 @@
             <h5>Advisor: Dr. Dave Auslander</h5>
             <h5>Dissertation: Optimal Control of Nonlinear Energy Systems</h5>
             <p>
-                My dissertation focused on optimal control of two energy systems with nonlinear dynamics or physics: office-scale battery storage (OSBS), and electric distribution grids.
+                My dissertation focused on optimal control of two energy systems with nonlinear dynamics: office-scale battery storage (OSBS), and electric distribution grids.
             </p>
             <ul>
                 <li>
@@ -148,10 +151,10 @@
             <ul>
                 <li>
                     My thesis focused on the developing control strategies for utilizing office-scale battery storage (OSBS) for demand response and load-shedding.
-                    The OSBS were off-the-shelf uninterruptible power supply units with nonlinear charging and discharging characteristics, and were used to power multiple plug loads through either wall or battery power.
+                    <!--The OSBS were off-the-shelf uninterruptible power supply units with nonlinear charging and discharging characteristics, and were used to power multiple plug loads through either wall or battery power.
                     During demand response or load-shedding events, the OSBS would use its battery power to supply power to connected plug loads.
                     My thesis covers modeling the OSBS charging and discharge cycles.
-                    Then it covers using dynamic programming to determine the optimal charge/discharge strategy for a given load-shedding target.
+                    Then it covers using dynamic programming to determine the optimal charge/discharge strategy for a given load-shedding target.-->
                 </li>
                 <li>
                     Major in control systems, with minors in optimization and design.
@@ -202,52 +205,64 @@
     <!-- End #education -->
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading"; style="font-weight: bold">Projects</h2>
         <div class="container">
-            <div class="row">
+            <!--<div class="row">-->
 
-                <div class="project shadow-large">
-                    <div class="project-image">
+                <div class="project-no-image shadow-large">
+                    <!--<div class="project-image">
                         <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-<!--                         <h3>Extremum Seeking (extremum-seeking)</h3> -->
-                        <a href="https://github.com/michaelsankur/deep-learning-from-scratch"_blank"><h3 style="color: #0C2C56;">Extremum Seeking (extremum-seeking)</h3></a>
-                        <p>
-                            Extremum Seeking (ES) is a model-free optimization and control technique that approximates gradient descent that can be used online or offline. ES estimates the gradient of a system by perturbing its input to the system, filtering, and demodulation.
-                        </p>
-                        <p>
-                            This repository contains three Extremum Seeking algorithm classes that can readily be incoporated into simulations or real-world applications. Jupyter notebooks contain several simulation examples of different systems. 
-                        </p>
-<!--                         <a href="https://github.com/michaelsankur/extremum-seeking" target="_blank">View Project</a> -->
-                    </div>
-                <!-- End .project -->
-                </div>
-
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
+                    </div>-->
                     <!-- End .project-image -->
                     <div class="project-info">
 <!--                         <h3>Deep Learning from Scratch (deep-learning-from-scratch)</h3> -->
-                        <a href="https://github.com/michaelsankur/deep-learning-from-scratch"_blank"><h3 style="color: #0C2C56;">Deep Learning from Scratch (deep-learning-from-scratch)</h3></a>
+                        <a href="https://github.com/michaelsankur/deep-learning-from-scratch"_blank"><h3 style="font-weight: bold; color: #005A9C;">Deep Learning from Scratch (deep-learning-from-scratch)</h3></a>
                         <p>
-                            This repository contains an OOP approach to creating and training multi-layer neural networks for regression and classification tasks.
+                            Deep learning is class of machine learning algorithms that uses multiple layers to extract higher-level features from a data set, inspired by the human brain.
+                            There is a multitude of comprehensive libraries (e.g. tensorflow) for deep learning.
+<!--                             This repo provides a simplified and easily comprehended to creating and training a neural network. -->
+                        </p>
+                        <p>
+                            This project is an OOP approach to creating and training multi-layer neural networks for regression and classification tasks, without the use of those libraries.
+                            The neural networks in the project do not use popular libraries (e.g. tensorflow), and are implemented using simple and native python data types, such as numpy arrays.
+                            Examples include nonlinear regression, classification of MNIST images, and segmentation of a 2D space according to their L1 or L2 distance from user-chosen points.
                         </p>
 <!--                         <a href="https://github.com/michaelsankur/deep-learning-from-scratch"_blank">View Project</a> -->
                     </div>
                 <!-- End .project -->
                 </div>
 
-            </div>
+                <div class="project-no-image shadow-large">
+                    <!--<div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>-->
+                    <!-- End .project-image -->
+                    <div class="project-info">
+<!--                         <h3>Extremum Seeking (extremum-seeking)</h3> -->
+<!--                         <a href="https://github.com/michaelsankur/extremum-seeking"_blank"><h3 style="font-weight: bold; color: #0C2C56;"><b>Extremum Seeking (extremum-seeking)</b></h3></a> -->
+                        <a href="https://github.com/michaelsankur/extremum-seeking"_blank"><h3 style="font-weight: bold; color: #005A9C;">Extremum Seeking (extremum-seeking)</h3></a>
+<!--                         <a href="https://github.com/michaelsankur/extremum-seeking"_blank"><h3 style="font-weight: bold; color: #1E90FF;">Extremum Seeking (extremum-seeking)</h3></a> -->
+                        <p>
+                            Extremum Seeking (ES) is a model-free optimization algorithm that approximates gradient descent, and can be used online or offline.
+                            ES estimates the gradient of a system by perturbing its input to a system, then filtering and demodulation of an objective function value based on system output.
+                        </p>
+                        <p>
+                            This project contains three implementations of ES, meant to be plug-and-play into simulations or real-world applications: 1D ES, 2D ES, multi-dimensional ES.
+                            Multiple ES instances of any type can be used in conjunction.
+                            Jupyter notebooks contain several simulation examples of the ES implementations on different systems.
+                        </p>
+<!--                         <a href="https://github.com/michaelsankur/extremum-seeking" target="_blank">View Project</a> -->
+                    </div>
+                <!-- End .project -->
+                </div>
+
+<!--             </div> -->
         </div>
     </div>
     <!-- End #projects -->
 
     <div id="publications">
-        <h2 class="heading">Publications</h2>
+        <h2 class="heading"; style="font-weight: bold">Publications</h2>
         <!-- <div class="container">
             <div class="row">
                 <div class="project shadow-large">
@@ -295,7 +310,7 @@
     <!-- End #publications -->
 
     <div id="skills" class="background-alt">
-        <h2 class="heading">Skills</h2>
+        <h2 class="heading"; style="font-weight: bold">Skills</h2>
         <ul>
             <!-- <li>JavaScript</li>
             <li>Python</li>
